@@ -1,0 +1,13 @@
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+      provider: org.ehcache.jsr107.EhcacheCachingProvider
+  security:
+    user:
+      name: admin
+      password: admin
+management:
+  health:
+    ldap:
+      enabled: false
